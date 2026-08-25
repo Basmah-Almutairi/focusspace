@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusSpace - Home</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <a href="index.html" class="logo">FocusSpace</a>
+            
+            <label for="nav-toggle" class="nav-toggle">
+                <figure>
+                   <img src="img/list.svg" width="32" height="32" alt="Toggle navigation menu">
+                </figure>
+            </label>
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Find Your Perfect Focus Space</h1>
+                    <p>Book quiet study pods, high-speed developer workstations, and distraction-free rooms near you in seconds.</p>
+                    <a href="contact.html" class="btn-primary">Book a Desk</a>
+                </div>
+                <div class="hero-image">
+                    <picture>
+                        <source srcset="img/main.jpeg" media="(max-width: 600px)">
+                        <img src="img/main.jpeg" alt="FocusSpace Workspace">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>Everything you need to stay productive.</h2>
+            <div class="cards-container">
+                <article class="info-card">
+                    <div class="card-image-box">
+                        <img src="img/pod.jpeg" alt="Quiet study pod">
+                    </div>
+                    <p>Soundproof quiet pods designed for deep studying and coding sessions.</p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-image-box">
+                        <img src="img/desk.jpeg" alt="Dedicated workstation desk">
+                    </div>
+                    <p>Ultra-fast gigabit internet with dual-monitor setups and charging docks.</p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-image-box">
+                        <img src="img/access.jpeg" alt="Open study library access">
+                    </div>
+                    <p>Complimentary specialty coffee, tea, and spaces to keep you energized.</p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-image-box">
+                        <img src="img/hero.jpeg" alt="24/7 Smart access">
+                    </div>
+                    <p>Seamless 24/7 keyless entry using your phone whenever inspiration strikes.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="quote-container">
+                <blockquote>
+                    Having a dedicated, distraction-free desk with proper dual monitors and ultra-fast WiFi completely transformed how I study for exams and build software projects.
+                </blockquote>
+                <figcaption>- Alex Morgan, Computer Science Student</figcaption>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-box">
+                <div class="cta-text">
+                    <h3>Ready to boost your productivity?</h3>
+                    <p>Join FocusSpace today and get your first study session completely free!</p>
+                </div>
+                <a href="contact.html" class="btn-cta">Sign Up Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; FocusSpace</p>
+    </footer>
+</body>
+</html>
