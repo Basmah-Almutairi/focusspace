@@ -30,7 +30,7 @@
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family), serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -42,7 +42,9 @@ header {
   background-color: var(--bg-dark);
   display: flex;
   flex-direction: column;
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
 }
 
 .header-bar {
@@ -95,13 +97,18 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: var(--text-sub);
-  font-size: 18px;
+  font-size: 0.875rem;
   transition: color 0.2s;
+  text-transform: uppercase;
 }
 
-header nav ul li a:hover,
+
 header nav ul li a[aria-current="page"] {
-  color: var(--text-main);
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+header nav ul li a:hover:not([aria-current="page"]) {
   font-weight: 700;
 }
 
