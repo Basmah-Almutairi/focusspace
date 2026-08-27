@@ -4,6 +4,12 @@
 @import url("./css/pages/contact.css");
 @import url("./css/footer.css");
 
+@property --num {
+  syntax: "<integer>";
+  inherits: false;
+  initial-value: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -413,6 +419,45 @@ header nav ul li a[aria-current="page"] {
   color: var(--text-info-header);
   font-weight: 700;
 }
+.stat-counter {
+  counter-reset: n var(--num);
+}
+
+.stat-counter::after {
+  content: counter(n);
+}
+
+.stat-locations {
+  animation: count-locations 3s forwards;
+}
+
+.stat-members {
+  animation: count-members 3s forwards;
+}
+
+.stat-uptime {
+  animation: count-uptime 3s forwards;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card {
+  background-color: var(--bg-quote);
+  padding: 40px 32px;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-card h1 {
+  font-size: 32px;
+  font-weight: 900;
 
 .contact-info h1 {
   font-size: 4rem;
@@ -517,4 +562,19 @@ header nav ul li a[aria-current="page"] {
   .quote-container blockquote {
     font-size: 36px;
   }
+}
+
+@keyframes count-locations {
+  from { --num: 0; }
+  to   { --num: 15; }
+}
+
+@keyframes count-members {
+  from { --num: 0; }
+  to   { --num: 5; }
+}
+
+@keyframes count-uptime {
+  from { --num: 0; }
+  to   { --num: 99; }
 }
