@@ -1,0 +1,6 @@
+# Code Owners for FocusSpace
+# Once branch protection requires Code Owner reviews,
+# every pull request must be approved by the owner below
+# before it can be merged into main.
+
+* @kingIzi
