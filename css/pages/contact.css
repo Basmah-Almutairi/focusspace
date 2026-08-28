@@ -1,7 +1,10 @@
+/* Section stays content-sized; auto margins center it in <main>'s leftover
+   space (main is a flex column). Children keep their natural heights. */
 .contact-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto 0;
 }
 
 .contact-info {
