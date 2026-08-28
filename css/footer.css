@@ -1,6 +1,6 @@
 footer {
   background-color: var(--bg-dark);
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem; /* side padding matches the header */
   display: flex;
   gap: 3rem;
   flex-direction: column;
@@ -45,6 +45,7 @@ footer form + p {
 @media (min-width: 1024px) {
   footer {
     justify-content: center;
+    padding: 2rem 80px; /* side padding matches the header */
   }
   footer .footer-column {
     max-width: calc(1024px / 3);
