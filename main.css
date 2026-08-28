@@ -648,41 +648,16 @@ header nav ul li a:hover:not([aria-current="page"]) {
 .partner {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 14px 28px 14px 14px;
+  padding: 18px 32px;
   background-color: var(--color-white);
-  border: 1px solid #e5e7eb;
   border-radius: 14px;
   box-shadow: 0 10px 20px -14px rgba(31, 41, 55, 0.3);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
-  color: var(--text-info-header);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4b5563;
   white-space: nowrap;
-}
-
-.partner-mark {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
-  font-size: 15px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #3882f6, #7c3aed);
-}
-
-.partners-set .partner:nth-child(2) .partner-mark {
-  background: linear-gradient(135deg, #f59e0b, #ef4444);
-}
-
-.partners-set .partner:nth-child(3) .partner-mark {
-  background: linear-gradient(135deg, #10b981, #0ea5e9);
-}
-
-.partners-set .partner:nth-child(4) .partner-mark {
-  background: linear-gradient(135deg, #8b5cf6, #ec4899);
 }
 
 .quote-section {
