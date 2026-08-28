@@ -23,9 +23,13 @@ footer form + p {
   padding-top: 2rem;
 }
 
-.footer-links {
+.footer-links ul {
   display: flex;
   flex-direction: column;
+}
+
+.footer-links a:hover {
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
