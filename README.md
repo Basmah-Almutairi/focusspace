@@ -1,6 +1,4 @@
-# FocusSpace - Responsive Client Website
-
-A modern, responsive multi-page landing page built for **FocusSpace**, a quiet and productive workspace solution.
+# FocusSpace
 
 ## 🔗 Live Demo
 [View Live Website](https://basmah-almutairi.github.io/focusspace/)
